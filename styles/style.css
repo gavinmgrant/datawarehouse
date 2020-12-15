@@ -229,7 +229,7 @@ footer {
 @media screen and (min-width: 1024px) {
   .footer-top,
   .footer-bottom {
-    margin: 100px 40px 100px 0;
+    margin: 100px 0 100px 0;
   }
 }
 
@@ -245,7 +245,7 @@ footer {
   }
   .footer-top,
   .footer-bottom {
-    margin: 100px 120px 100px 0;
+    margin: 100px 0 100px 0;
   }
 }
 
@@ -310,6 +310,10 @@ button {
   font-size: 18px;
 }
 
+.learn-more,
+.social,
+a:hover,
+li:hover,
 button:hover {
   cursor: pointer;
 }
@@ -479,6 +483,7 @@ button:hover {
 
 hr {
   border: 1px solid rgba(156, 105, 226, 0.2);
+  margin: 0 0 0 0;
 }
 
 @media screen and (min-width: 480px) {
@@ -491,7 +496,7 @@ hr {
 
 @media screen and (min-width: 800px) {
   html {
-    margin: 0 50px 0 60px;
+    margin: 0 60px 0 60px;
     text-align: left;
   }
   .about {
@@ -581,13 +586,13 @@ hr {
     margin: 0 50px 0 0;
   }
   .about-testimonials {
-    margin: 100px 40px 100px 0;
+    margin: 100px 0 100px 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   html {
-    margin: 0 80px 0 120px;
+    margin: 0 120px 0 120px;
     font-size: 18px;
   }
   h1 {
@@ -612,7 +617,7 @@ hr {
     top: -270px;
   }
   .about-container {
-    margin: 0 40px 100px 0;
+    margin: 0 0 100px 0;
   }
   .about-container h2 {
     padding: 80px 60px 30px 0;
@@ -640,7 +645,7 @@ hr {
 
 @media screen and (min-width: 1600px) {
   html {
-    margin: 0 120px 0 240px;
+    margin: 0 240px 0 240px;
   }
   .about-top {
     height: 700px;
@@ -659,7 +664,7 @@ hr {
   }
   .about-container {
     height: 560px;
-    margin: 0 120px 100px 0;
+    margin: 0 0 100px 0;
   }
   .about-container h2 {
     padding: 90px 60px 30px 450px;
@@ -680,6 +685,7 @@ hr {
     display: grid;
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
+    gap: 10px 80px;
   }
   .about-features .features-grid .feature {
     position: relative;
@@ -699,7 +705,7 @@ hr {
     left: 130px;
   }
   .about-testimonials {
-    margin: 100px 120px 150px 0;
+    margin: 100px 0 150px 0;
     padding: 100px 100px 120px 100px;
   }
   .about-testimonials h2 {
