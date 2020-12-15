@@ -1,0 +1,485 @@
+@import "./variables";
+@import "./header";
+@import "./footer";
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+html {
+    font-family: $bodyfont;
+    color: $darkgray;
+    background-color: $offwhite;
+    font-size: 16px;
+    margin: 0 40px 0 40px;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $headerfont;
+    color: $darkblue;
+}
+
+h1 {
+    font-size: 54px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+b {
+    color: #000000;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+button {
+    height: 60px;
+    border-radius: 100px;
+    border: none;
+    padding: 0 30px 0 30px;
+    font-size: 18px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.button-request {
+    background-color: #FFFFFF;
+    font-size: 16px;
+    box-shadow: 0 5px 5px #E7EBEF;
+    margin: 10px;
+}
+
+.button-learn-about {
+    background-color: $purple;
+    color: #FFFFFF;
+    margin: 50px 0 50px 0;
+}
+
+.fa-arrow-right {
+    padding-left: 10px;
+    color: $purple;
+    font-size: 18px;
+}
+
+.logo {
+    display: inline-block;
+    margin: 20px 0 20px 0;
+    .logo-left {
+        height: 20px;
+        width: 20px;
+        background-color: $purple;
+        border-radius: 100px;
+        float: left;
+        margin: 15px 0 0 0;
+    }
+    .logo-right {
+        height: 35px;
+        width: 20px;
+        background-color: $pink;
+        border-radius: 100px;
+        margin: 0 0 0 29px;
+    }
+}
+
+.selected {
+    color: $darkblue;
+    font-weight: bolder;
+}
+
+.about {
+    margin: 60px 0 0 0;
+}
+
+.about-top {
+    p {
+        margin: 50px 0 0 0;
+    }
+}
+
+.image-about-first {
+    width: 90%;
+    height: auto;
+}
+
+.about-container {
+    background-color: $pinklight;
+    border-radius: 50px;
+    padding: 30px;
+    margin: 50px 0 50px 0;
+    h2 {
+        padding: 0 0 30px 0;
+    }
+    .image-about-second {
+        width: 90%;
+        max-width: 300px;
+        height: auto;
+    }
+}
+
+.about-features {
+    margin: 100px 0 0 0;
+    .features-title {
+        text-align: center;
+        margin: 0 0 50px 0;
+        p {
+            padding: 30px;
+        }
+    }
+    .feature {
+        padding: 50px;
+        border-radius: 50px;
+        margin: 20px;
+        p {
+            margin: 20px 0 20px 0;
+        }
+        .feature-image {
+            max-width: 245px;
+            min-width: 100px;
+            width: 100%;
+        }
+    }
+    #feat-1 {
+        background-color: $feat1;
+    }
+    #feat-2 {
+        background-color: $feat2;
+    }
+    #feat-3 {
+        background-color: $feat3;
+    }
+    #feat-4 {
+        background-color: $feat4;
+    }
+}
+
+.about-testimonials {
+    background-color: $purple;
+    border-radius: 50px;
+    padding: 50px;
+    margin: 100px 0 100px 0;
+    h2 {
+        color: #FFFFFF;
+        padding: 0 0 30px 0;
+    }
+    .card {
+        text-align: center;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 0 0 40px 0;
+        box-shadow: 0 20px $darkpurple;
+        .testimonial-headshot {
+            margin: 0 0 20px 0;
+        }
+        .testimonial {
+            p, b {
+                padding: 3px;
+            }
+            a {
+                font-size: 14px;
+                color: $purple;
+                text-decoration: none;
+                margin-bottom: 20px;
+            }
+            .testimonial-copy {
+                padding: 10px 0 0 0;
+            }
+        }
+    }
+}
+
+hr {
+    border: 1px solid $lightpurple;
+}
+
+@media screen and (min-width: 480px) {
+    .card {
+        text-align: left;
+        padding: 40px;
+        margin: 20px 20px 40px 20px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    html {
+        margin: 0 50px 0 60px;
+        text-align: left;
+    }
+
+    .about {
+        margin: 100px 0 0 0;
+    }
+
+    .about-top {
+        height: 480px;
+        p {
+            width: 240px;
+        }
+    }
+
+    .button-learn-about {
+        position: relative;
+        top: -170px;
+    }
+
+    .image-about-first {
+        width: 480px;
+        height: 254px;
+        position: relative;
+        top: -100px;
+        left: 80px;
+    }
+
+    .about-container {
+        padding: 50px;
+        margin: 0 0 100px 0;
+        h2 {
+            padding: 20px 0 30px 0;
+        }
+        p {
+            padding: 0 0 20px 0;
+        }
+        .image-about-second {
+            float: left;
+            margin: 0 50px 0 0;
+            max-width: 260px;
+            max-height: 275px;
+            width: auto;
+            height: auto;
+        }
+    } 
+
+    .about-testimonials {
+        padding: 100px 100px 120px 100px;
+        h2 {
+            padding: 20px 20px 40px 20px;
+        }
+        .card {
+            padding: 60px;
+            .testimonial-headshot {
+                float: left;
+            }
+            .testimonial {
+                text-align: left;
+                margin: 0 0 0 120px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 64px;
+    }
+    
+    h2 {
+        font-size: 35px;
+    }
+
+    .about-top {
+        height: 560px;
+        p {
+            width: 320px;
+        }
+    }
+
+    .button-learn-about {
+        top: -240px;
+    }
+
+    .image-about-first {
+        width: 640px;
+        height: 339px;
+    }
+
+    .about-container {
+        h2 {
+            padding: 30px 20px 30px 0;
+        }
+        p {
+            padding: 0 20px 30px 0;
+        }
+    }
+
+    .feature-image {
+        float: left;
+        margin: 0 50px 0 0;
+    }
+
+    .about-testimonials {
+        margin: 100px 40px 100px 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    html {
+        margin: 0 80px 0 120px;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+    
+    h2 {
+        font-size: 40px;
+    }
+
+    .image-about-first {
+        width: 700px;
+        height: 370px;
+        top: -220px;
+        left: 200px;
+    }
+
+    .about {
+        h1 {
+            width: 645px;
+        }
+    }
+
+    .about-top {
+        height: 640px;
+    }
+
+    .button-learn-about {
+        top: -270px;
+    }
+
+    .about-container {
+        margin: 0 40px 100px 0;        
+        h2 {
+            padding: 80px 60px 30px 0;
+        }
+        p {
+            padding: 0 60px 80px 0;
+        }
+        .image-about-second {
+            max-width: 320px;
+            max-height: 338px;
+            width: auto;
+            height: auto;
+        }
+    }
+
+    .about-features {
+        .features-title {
+            width: 640px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .feature {
+            width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    html {
+        margin: 0 120px 0 240px;
+    }
+
+    .about-top {
+        height: 700px;
+        p {
+            width: 360px;
+        }
+    }
+
+    .button-learn-about {
+        top: -360px;
+    }
+
+    .image-about-first {
+        width: 885px;
+        height: 468px;
+        top: -220px;
+        left: 190px;
+    }
+
+    .about-container {
+        height: 560px;
+        margin: 0 120px 100px 0;   
+        h2 {
+            padding: 90px 60px 30px 450px;
+        }
+        p {
+            padding: 0 60px 90px 450px;
+        }
+        .image-about-second {
+            position: relative;
+            top: -20px;
+            max-width: 477px;
+            max-height: 504px;
+            width: auto;
+            height: auto;
+            
+        }
+    }
+
+    .about-features {
+        .features-grid {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            .feature {
+                position: relative;
+                width: 442px;
+                height: 358px;
+                .feature-image {
+                    position: absolute;
+                    left: -150px;
+                }
+                h3, p {
+                    padding-left: 80px;
+                }
+                .learn-more {
+                    position: absolute;
+                    bottom: 40px;
+                    left: 130px;
+                }
+            }
+        }
+    }
+
+    .about-testimonials {
+        margin: 100px 120px 150px 0;
+        padding: 100px 100px 120px 100px;
+        h2 {
+            padding: 20px 20px 60px 20px;
+        }
+        .card {
+            margin: 20px 20px 40px 20px;
+        }
+    }
+
+    .testimonials {
+        display: flex;
+        flex-direction: row;
+    }
+}
