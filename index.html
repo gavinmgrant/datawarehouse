@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/flickity.css" media="screen">
+    <script src="./flickity.pkgd.js"></script>
     <title>Data Warehouse</title>
 </head>
 <body>
@@ -75,7 +77,23 @@
         </article>
         <article class="about-testimonials">
             <h2>Testimonials</h2>
-            <section class="testimonials">
+            <section class="testimonials" data-flickity='{ "freeScroll": true, "prevNextButtons": false, "cellAlign": "left" }'>
+                <section class="card">
+                    <img src="./images/testimonials-headshot-1.png" alt="Data Warehouse testimonial headshot" class="testimonial-headshot">
+                    <div class="testimonial">
+                        <b>John Fang</b>
+                        <p><a href="#">wordfaang.com</a></p>
+                        <p class="testimonial-copy">Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.</p>
+                    </div>
+                </section>
+                <section class="card">
+                    <img src="./images/testimonials-headshot-2.png" alt="Data Warehouse testimonial headshot" class="testimonial-headshot">
+                    <div class="testimonial">
+                        <b>Jeny Doe</b>
+                        <p><a href="#">UX Engineer</a></p>
+                        <p class="testimonial-copy">Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.</p>
+                    </div>
+                </section>
                 <section class="card">
                     <img src="./images/testimonials-headshot-1.png" alt="Data Warehouse testimonial headshot" class="testimonial-headshot">
                     <div class="testimonial">

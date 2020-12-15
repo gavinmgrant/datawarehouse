@@ -447,7 +447,7 @@ button:hover {
 .about-testimonials {
   background-color: #9C69E2;
   border-radius: 50px;
-  padding: 50px;
+  padding: 40px 40px 70px 40px;
   margin: 100px 0 100px 0;
 }
 
@@ -456,32 +456,34 @@ button:hover {
   padding: 0 0 30px 0;
 }
 
-.about-testimonials .card {
+.about-testimonials .testimonials .card {
   text-align: center;
   background-color: #FFFFFF;
   border-radius: 20px;
-  padding: 10px;
-  margin: 0 0 40px 0;
+  padding: 20px;
+  margin: 0 20px 40px 0;
   -webkit-box-shadow: 0 20px #7F4CD6;
           box-shadow: 0 20px #7F4CD6;
+  height: auto;
+  width: 100%;
 }
 
-.about-testimonials .card .testimonial-headshot {
+.about-testimonials .testimonials .card .testimonial-headshot {
   margin: 0 0 20px 0;
 }
 
-.about-testimonials .card .testimonial p, .about-testimonials .card .testimonial b {
+.about-testimonials .testimonials .card .testimonial p, .about-testimonials .testimonials .card .testimonial b {
   padding: 3px;
 }
 
-.about-testimonials .card .testimonial a {
+.about-testimonials .testimonials .card .testimonial a {
   font-size: 14px;
   color: #9C69E2;
   text-decoration: none;
   margin-bottom: 20px;
 }
 
-.about-testimonials .card .testimonial .testimonial-copy {
+.about-testimonials .testimonials .card .testimonial .testimonial-copy {
   padding: 10px 0 0 0;
 }
 
@@ -491,9 +493,15 @@ hr {
 }
 
 @media screen and (min-width: 480px) {
-  .card {
+  .about-testimonials {
+    padding: 50px 50px 80px 50px;
+  }
+  .about-testimonials h2 {
+    padding: 20px 20px 40px 20px;
+  }
+  .about-testimonials .testimonials .card {
     text-align: left;
-    padding: 40px;
+    padding: 50px;
     margin: 20px 20px 40px 20px;
   }
 }
@@ -545,15 +553,15 @@ hr {
     padding: 100px 100px 120px 100px;
   }
   .about-testimonials h2 {
-    padding: 20px 20px 40px 20px;
+    padding: 20px 20px 40px 0;
   }
-  .about-testimonials .card {
-    padding: 60px;
+  .about-testimonials .testimonials .card {
+    padding: 70px;
   }
-  .about-testimonials .card .testimonial-headshot {
+  .about-testimonials .testimonials .card .testimonial-headshot {
     float: left;
   }
-  .about-testimonials .card .testimonial {
+  .about-testimonials .testimonials .card .testimonial {
     text-align: left;
     margin: 0 0 0 120px;
   }
@@ -591,6 +599,10 @@ hr {
   }
   .about-testimonials {
     margin: 100px 0 100px 0;
+  }
+  .about-testimonials .testimonials .card {
+    padding: 80px;
+    width: 65%;
   }
 }
 
@@ -773,19 +785,10 @@ hr {
     padding: 100px 100px 120px 100px;
   }
   .about-testimonials h2 {
-    padding: 20px 20px 60px 20px;
+    padding: 20px 20px 60px 0;
   }
   .about-testimonials .card {
     margin: 20px 20px 40px 20px;
-  }
-  .testimonials {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
 }
 /*# sourceMappingURL=style.css.map */

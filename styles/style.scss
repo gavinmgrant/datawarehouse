@@ -200,34 +200,38 @@ button:hover {
 .about-testimonials {
     background-color: $purple;
     border-radius: 50px;
-    padding: 50px;
+    padding: 40px 40px 70px 40px;
     margin: 100px 0 100px 0;
     h2 {
         color: #FFFFFF;
         padding: 0 0 30px 0;
     }
-    .card {
-        text-align: center;
-        background-color: #FFFFFF;
-        border-radius: 20px;
-        padding: 10px;
-        margin: 0 0 40px 0;
-        box-shadow: 0 20px $darkpurple;
-        .testimonial-headshot {
-            margin: 0 0 20px 0;
-        }
-        .testimonial {
-            p, b {
-                padding: 3px;
+    .testimonials {
+        .card {
+            text-align: center;
+            background-color: #FFFFFF;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 0 20px 40px 0;
+            box-shadow: 0 20px $darkpurple;
+            height: auto;
+            width: 100%;
+            .testimonial-headshot {
+                margin: 0 0 20px 0;
             }
-            a {
-                font-size: 14px;
-                color: $purple;
-                text-decoration: none;
-                margin-bottom: 20px;
-            }
-            .testimonial-copy {
-                padding: 10px 0 0 0;
+            .testimonial {
+                p, b {
+                    padding: 3px;
+                }
+                a {
+                    font-size: 14px;
+                    color: $purple;
+                    text-decoration: none;
+                    margin-bottom: 20px;
+                }
+                .testimonial-copy {
+                    padding: 10px 0 0 0;
+                }
             }
         }
     }
@@ -239,10 +243,18 @@ hr {
 }
 
 @media screen and (min-width: 480px) {
-    .card {
-        text-align: left;
-        padding: 40px;
-        margin: 20px 20px 40px 20px;
+    .about-testimonials {
+        padding: 50px 50px 80px 50px;
+        h2 {
+            padding: 20px 20px 40px 20px;
+        }
+        .testimonials {
+            .card {
+                text-align: left;
+                padding: 50px;
+                margin: 20px 20px 40px 20px;
+            }
+        }
     }
 }
 
@@ -298,16 +310,18 @@ hr {
     .about-testimonials {
         padding: 100px 100px 120px 100px;
         h2 {
-            padding: 20px 20px 40px 20px;
+            padding: 20px 20px 40px 0;
         }
-        .card {
-            padding: 60px;
-            .testimonial-headshot {
-                float: left;
-            }
-            .testimonial {
-                text-align: left;
-                margin: 0 0 0 120px;
+        .testimonials {
+            .card {
+                padding: 70px;
+                .testimonial-headshot {
+                    float: left;
+                }
+                .testimonial {
+                    text-align: left;
+                    margin: 0 0 0 120px;
+                }
             }
         }
     }
@@ -354,6 +368,12 @@ hr {
 
     .about-testimonials {
         margin: 100px 0 100px 0;
+        .testimonials {
+            .card {
+                padding: 80px;
+                width: 65%;
+            }
+        }
     }
 }
 
@@ -510,15 +530,10 @@ hr {
         margin: 100px 0 150px 0;
         padding: 100px 100px 120px 100px;
         h2 {
-            padding: 20px 20px 60px 20px;
+            padding: 20px 20px 60px 0;
         }
         .card {
             margin: 20px 20px 40px 20px;
         }
-    }
-
-    .testimonials {
-        display: flex;
-        flex-direction: row;
     }
 }
