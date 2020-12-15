@@ -208,6 +208,7 @@ button:hover {
     }
     .testimonials {
         .card {
+            opacity: .5;
             text-align: center;
             background-color: #FFFFFF;
             border-radius: 20px;
@@ -233,6 +234,9 @@ button:hover {
                     padding: 10px 0 0 0;
                 }
             }
+        }
+        .card.is-selected {
+            opacity: 1;
         }
     }
 }

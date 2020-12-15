@@ -457,6 +457,7 @@ button:hover {
 }
 
 .about-testimonials .testimonials .card {
+  opacity: .5;
   text-align: center;
   background-color: #FFFFFF;
   border-radius: 20px;
@@ -485,6 +486,10 @@ button:hover {
 
 .about-testimonials .testimonials .card .testimonial .testimonial-copy {
   padding: 10px 0 0 0;
+}
+
+.about-testimonials .testimonials .card.is-selected {
+  opacity: 1;
 }
 
 hr {
