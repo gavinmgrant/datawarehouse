@@ -2,6 +2,19 @@
 @import "./header";
 @import "./footer";
 
+@mixin trapezoid {
+    position: absolute;
+    border-radius: 50px;;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top left;
+    transform: skewX(-10deg);
+    z-index: -1;
+}
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -167,15 +180,19 @@ button:hover {
         }
     }
     #feat-1 {
+        position: relative;
         background-color: $feat1;
     }
     #feat-2 {
+        position: relative;
         background-color: $feat2;
     }
     #feat-3 {
+        position: relative;
         background-color: $feat3;
     }
     #feat-4 {
+        position: relative;
         background-color: $feat4;
     }
 }
@@ -401,6 +418,22 @@ hr {
             width: 900px;
             margin-left: auto;
             margin-right: auto;
+        }
+        #feat-1:before {
+            @include trapezoid();
+            background: $feat1;
+        }
+        #feat-2:before {
+            @include trapezoid();
+            background: $feat2;
+        }
+        #feat-3:before {
+            @include trapezoid();
+            background: $feat3;
+        }
+        #feat-4:before {
+            @include trapezoid();
+            background: $feat4;
         }
     }
 }
